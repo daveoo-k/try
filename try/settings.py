@@ -56,7 +56,7 @@ ROOT_URLCONF = 'try.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR,"try/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,7 +68,7 @@ TEMPLATES = [
         },
     },
 ]
-
+print (BASE_DIR)
 WSGI_APPLICATION = 'try.wsgi.application'
 
 
