@@ -1,5 +1,18 @@
-<html>
-this is a template</br>
-for contacts page
-{{request.user}}
-</html>
+{% extends 'base.html'%}
+
+{% block content_2 %}
+
+
+    this is a template</br>
+     block2</br>
+    for contacts page</br>
+    {{request.user}}</br>
+
+{% endblock %}
+
+
+{% block content %}
+
+    to jest zawartosc bloku 1 z strony contacts</br>
+
+{% endblock %}
