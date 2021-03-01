@@ -18,6 +18,7 @@ def product_create_view (request,*args,**kwargs):
     form = ProductForm(request.POST or None)
     if form.is_valid():
         form.save()
+        form = ProductForm()
     context = {
         'form':form
     }  

@@ -6,4 +6,4 @@ class Product(models.Model):
     description =   models.TextField()
     price       =   models.DecimalField(decimal_places=2, max_digits=1000)
     summary     =   models.TextField(blank=True, default="this is my product buy it")
-    features    =   models.BooleanField()
+    features    =   models.BooleanField(default=False)
