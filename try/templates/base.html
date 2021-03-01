@@ -1,8 +1,15 @@
 <!doctype html>
     <head>
         <title>COD Coding</title>
+        <style type="text/css">
+            canvas{
+                border :1px dotted black;
+        }
+        </style>
     </head>
     <body>
+        <canvas>   </canvas>
+        
         <h1>PANEL NAWIGACYJNY DZIEDZICZONY</h1>
 {% block content %}
 zawartosc bloku
@@ -12,5 +19,7 @@ zawartosc bloku
 zawartosc bloku 2
 {% endblock %}
 {{ my_pos1 }} 
+
+<script src="canvas.js"></script>
     </body>
 </html>

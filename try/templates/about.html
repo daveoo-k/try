@@ -5,7 +5,14 @@ this is a template</br>
 for home about
 
 {{ my_pos1 }} {{ my_pos2}} 
+{{ my_list }} 
+{% for my_s_item in my_list %}
+
+<li>{{ my_s_item|capfirst }}</li>
+
+
+
+{% endfor %}
 
 {% endblock %}
 
-{{ my_pos1 }} {{ my_pos1_int }} 
